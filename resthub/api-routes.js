@@ -9,5 +9,15 @@ router.get('/',function(req,res){
     });
 });
 
+//Datasiswa
+router.get('/datasiswa',function(req,res){
+    res.json({
+        nama : 'Amir Muklisin',
+        kelas: "X-MIPA-C",
+        Absen: "3",
+        NIS: "12345",
+    });
+});
+
 //export API
 module.exports = router;

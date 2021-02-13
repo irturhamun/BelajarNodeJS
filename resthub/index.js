@@ -13,10 +13,13 @@ let app = express();
 var port = process.env.port || 8080;
 
 //send message
-app.get('/',(req,res) => res.send("Hello From Express"));
+app.get('/',(req,res) => res.send("Selamat datang di Data Center Siswa"));
 
 // app respons apiRoutes
-app.use('/api',apiRoutes);
+app.use('/',apiRoutes);
+
+//app respons DataSiswa
+app.use('/datasiswa',apiRoutes);
 
 //launch app
 app.listen(port,function(){
