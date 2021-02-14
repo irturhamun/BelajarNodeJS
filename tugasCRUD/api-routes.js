@@ -27,7 +27,7 @@ router.route('/siswa')
 .get(siswaController.index)
 .post(siswaController.new);
 
-router.route('/siswa/siswa_id')
+router.route('/siswa/:siswa_id')
 .get(siswaController.view)
 .patch(siswaController.update)
 .put(siswaController.update)
