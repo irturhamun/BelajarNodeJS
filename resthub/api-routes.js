@@ -2,7 +2,7 @@
 let router = require('express').Router();
 
 //set default API Response
-router.get('/',function(req,res){
+router.get('/api',function(req,res){
     res.json({
         status : 'API Working',
         message: "Welcome to RESThub crafted"
